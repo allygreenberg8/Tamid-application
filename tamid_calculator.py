@@ -7,10 +7,10 @@ print("Welcome to the TAMID Calculator!")
 play = True #loop condition
 
 while play: #calc loop
-    start = str(input(("Would you like to calculate something (y/n): ")))
+    start = str(input(("\nWould you like to calculate something (y/n): ")))
     
     if start == "y": #calculation 
-        operand_1 = float(input("Please enter the first number: "))
+        operand_1 = float(input("\nPlease enter the first number: "))
         operand_2 = float(input("Please enter the second number: "))
 
         function = str(input("Please enter your function: "))
@@ -27,7 +27,7 @@ while play: #calc loop
 
         elif function == "/": #division
             if operand_2 == 0: #division by 0 error condition
-                print("You cannot divide by 0!")
+                print("\nYou cannot divide by 0!")
                 continue
             result = (operand_1 / operand_2)
 
@@ -36,9 +36,9 @@ while play: #calc loop
             operand_2 = int(operand_2)
             result = (operand_1 % operand_2)
 
-        print(f"The result is:  {str(result)}") #output statement
+        print(f"\nThe result is:  {str(result)}") #output statement
 
     else: #exit conditions
-        print("Thanks for coming!")
+        print("\nThanks for coming!")
         play = False
 
